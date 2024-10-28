@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bqfwqxsOFp+WpqnbzjfgSgjcn7E3rnuYCTqCWQdOqrCuRJUcmpTY8mj7GNPB4+3DCVRqjXx5fSP25pPkDWUetA==",
+  "success": true,
+  "projectFilePath": "/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/Marrow Launcher.csproj",
+  "expectedPackageFiles": [
+    "/home/protogenposting/.nuget/packages/octokit/13.0.1/octokit.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

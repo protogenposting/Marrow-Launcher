@@ -1,0 +1,6 @@
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.csproj.AssemblyReference.cache
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.GeneratedMSBuildEditorConfig.editorconfig
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.AssemblyInfoInputs.cache
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.AssemblyInfo.cs
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.csproj.CoreCompileInputs.cache
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.sourcelink.json
