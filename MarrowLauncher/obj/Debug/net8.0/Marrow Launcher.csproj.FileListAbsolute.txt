@@ -4,3 +4,15 @@
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.AssemblyInfo.cs
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.csproj.CoreCompileInputs.cache
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.sourcelink.json
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Marrow Launcher
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Marrow Launcher.deps.json
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Marrow Launcher.runtimeconfig.json
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Marrow Launcher.dll
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Marrow Launcher.pdb
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Debug/net8.0/Octokit.dll
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.csproj.CopyComplete
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.dll
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/refint/Marrow Launcher.dll
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.pdb
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.genruntimeconfig.cache
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/ref/Marrow Launcher.dll

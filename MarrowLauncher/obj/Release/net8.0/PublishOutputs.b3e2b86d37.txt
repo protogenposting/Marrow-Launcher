@@ -1,0 +1,6 @@
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Marrow Launcher
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Marrow Launcher.dll
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Marrow Launcher.deps.json
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Marrow Launcher.runtimeconfig.json
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Marrow Launcher.pdb
+/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/bin/Release/net8.0/publish/Octokit.dll
