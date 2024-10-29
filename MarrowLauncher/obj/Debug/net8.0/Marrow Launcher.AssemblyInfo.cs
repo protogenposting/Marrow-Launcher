@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Marrow Launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9616faae454c226bcb09b2903b5f1463d7c1cc87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5685914f880cb9cad32dca9aed856f6f44d3b9ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("Marrow Launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Marrow Launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
