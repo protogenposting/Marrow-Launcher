@@ -63,4 +63,7 @@ else
 
         Console.WriteLine("Install openjdk 21!");
     }
+    else{
+        Console.WriteLine(result);
+    }
 }
