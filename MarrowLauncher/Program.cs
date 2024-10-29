@@ -2,6 +2,7 @@
 using System.Net;
 using System.Runtime.InteropServices;
 using Octokit;
+using Microsoft.Win32;
 
 GitHubClient client = new GitHubClient(new ProductHeaderValue("protogenposting"));
 
@@ -46,6 +47,8 @@ Console.WriteLine("Download Check Done... Launching");
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 {
+    Console.WriteLine("Wow... A Linux User... So Hot...");
+
     string result = ShellHelper.Bash("java -jar Marrow.jar");
 
     if(result.Contains("command not found"))
@@ -57,15 +60,18 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    string result = ShellHelper.CMD("java -jar Marrow.jar");
-
-    if(result.Contains("command not found"))
+    var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("%JAVA_HOME%"), "-jar Marrow.jar")
     {
-        Console.WriteLine("No Java Version Found!");
+        CreateNoWindow = true,
+        UseShellExecute = false
+    };
+    Process proc;
+    if ((proc = Process.Start(processInfo)) == null)
+    {
+        throw new InvalidOperationException("??");
+    }
 
-        Console.WriteLine("Install JDK 21 or Higher!");
-    }
-    else{
-        Console.WriteLine(result);
-    }
+    proc.WaitForExit();
+    int exitCode = proc.ExitCode;
+    proc.Close();
 }

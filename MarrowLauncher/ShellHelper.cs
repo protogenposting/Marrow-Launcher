@@ -36,7 +36,7 @@ public static class ShellHelper
         {
             StartInfo = new ProcessStartInfo
             {
-                FileName = "cmd.exe",
+                FileName = "c:\\windows\\system32\\cmd.exe",
                 Arguments = cmd,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
