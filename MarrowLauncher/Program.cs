@@ -9,24 +9,37 @@ IReadOnlyList<Release> releases = await client.Repository.Release.GetAll("protog
 
 Release latest = releases[0];
 
-string lastDownloadedRelease;
+string lastDownloadedRelease = "";
 
-using (StreamReader reader = new StreamReader("LastVersion.txt"))
+try{
+    using (StreamReader reader = new StreamReader("LastVersion.txt"))
+    {
+        lastDownloadedRelease = reader.ReadLine();
+    }
+}
+catch(Exception e)
 {
-    lastDownloadedRelease = reader.ReadLine();
+    
 }
 
-if(lastDownloadedRelease == null || latest.TagName != lastDownloadedRelease)
+Console.WriteLine("Last Release Downloaded: "+lastDownloadedRelease);
+
+Console.WriteLine("CurrentRelease: "+latest.TagName);
+
+if(lastDownloadedRelease.Equals("") || !latest.TagName.Equals(lastDownloadedRelease))
 {
     using (StreamWriter outputFile = new StreamWriter("LastVersion.txt"))
     {
         outputFile.WriteLine(latest.TagName);
     }
+
+    Console.WriteLine("Downloading Update!");
+
     var webClient = new WebClient();
 
-webClient.UseDefaultCredentials = true;
+    webClient.UseDefaultCredentials = true;
 
-webClient.DownloadFile("https://github.com/protogenposting/Marrow/releases/latest/download/Marrow.jar", "Marrow.jar");
+    webClient.DownloadFile("https://github.com/protogenposting/Marrow/releases/latest/download/Marrow.jar", "Marrow.jar");
 }
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
@@ -35,7 +48,9 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 
     if(result.Contains("command not found"))
     {
-        Console.WriteLine("Installing OpenJDK Version 21...");
+        Console.WriteLine("No Java Version Found!");
+
+        Console.WriteLine("Run This Command: sudo apt install openjdk-21-jdk");
     }
 }
 else
