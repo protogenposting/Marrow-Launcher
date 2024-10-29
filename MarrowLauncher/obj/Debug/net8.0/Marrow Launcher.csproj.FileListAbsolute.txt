@@ -16,3 +16,21 @@
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.pdb
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/Marrow Launcher.genruntimeconfig.cache
 /home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/Debug/net8.0/ref/Marrow Launcher.dll
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Marrow Launcher.exe
+C:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Marrow Launcher.deps.json
+C:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Marrow Launcher.runtimeconfig.json
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Marrow Launcher.dll
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Marrow Launcher.pdb
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\bin\Debug\net8.0\Octokit.dll
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.csproj.AssemblyReference.cache
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.AssemblyInfoInputs.cache
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.AssemblyInfo.cs
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.csproj.CoreCompileInputs.cache
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.sourcelink.json
+C:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow L.C3A24141.Up2Date
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.dll
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\refint\Marrow Launcher.dll
+c:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.pdb
+C:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\Marrow Launcher.genruntimeconfig.cache
+C:\Users\ck6100\Documents\GitHub\Marrow-Launcher\MarrowLauncher\obj\Debug\net8.0\ref\Marrow Launcher.dll

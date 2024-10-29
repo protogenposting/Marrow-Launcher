@@ -40,9 +40,9 @@ if(lastDownloadedRelease.Equals("") || !latest.TagName.Equals(lastDownloadedRele
     webClient.UseDefaultCredentials = true;
 
     webClient.DownloadFile("https://github.com/protogenposting/Marrow/releases/latest/download/Marrow.jar", "Marrow.jar");
-
-    Console.WriteLine("Downloading Done... Launching");
 }
+
+Console.WriteLine("Download Check Done... Launching");
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 {
@@ -63,7 +63,7 @@ else
     {
         Console.WriteLine("No Java Version Found!");
 
-        Console.WriteLine("Install openjdk 21!");
+        Console.WriteLine("Install JDK 21 or Higher!");
     }
     else{
         Console.WriteLine(result);

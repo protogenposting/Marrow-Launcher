@@ -39,19 +39,19 @@
     ]
   },
   "packageFolders": {
-    "/home/protogenposting/.nuget/packages/": {}
+    "C:\\Users\\ck6100\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/Marrow Launcher.csproj",
+      "projectUniqueName": "C:\\Users\\ck6100\\Documents\\GitHub\\Marrow-Launcher\\MarrowLauncher\\Marrow Launcher.csproj",
       "projectName": "Marrow Launcher",
-      "projectPath": "/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/Marrow Launcher.csproj",
-      "packagesPath": "/home/protogenposting/.nuget/packages/",
-      "outputPath": "/home/protogenposting/Desktop/Marrow/Marrow-Launcher/MarrowLauncher/obj/",
+      "projectPath": "C:\\Users\\ck6100\\Documents\\GitHub\\Marrow-Launcher\\MarrowLauncher\\Marrow Launcher.csproj",
+      "packagesPath": "C:\\Users\\ck6100\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ck6100\\Documents\\GitHub\\Marrow-Launcher\\MarrowLauncher\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/protogenposting/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ck6100\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -69,6 +69,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -96,7 +101,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
