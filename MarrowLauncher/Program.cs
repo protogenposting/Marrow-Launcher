@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Net;
 using System.Runtime.InteropServices;
 using Octokit;
@@ -10,37 +9,39 @@ IReadOnlyList<Release> releases = await client.Repository.Release.GetAll("protog
 
 Release latest = releases[0];
 
-var webClient = new WebClient();
+string lastDownloadedRelease;
+
+using (StreamReader reader = new StreamReader("LastVersion.txt"))
+{
+    lastDownloadedRelease = reader.ReadLine();
+}
+
+if(lastDownloadedRelease == null || latest.TagName != lastDownloadedRelease)
+{
+    using (StreamWriter outputFile = new StreamWriter("LastVersion.txt"))
+    {
+        outputFile.WriteLine(latest.TagName);
+    }
+    var webClient = new WebClient();
 
 webClient.UseDefaultCredentials = true;
 
 webClient.DownloadFile("https://github.com/protogenposting/Marrow/releases/latest/download/Marrow.jar", "Marrow.jar");
+}
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 {
-    RunCommandWithBash("java Marrow.jar");
+    string result = ShellHelper.Bash("java -jar Marrow.jar");
+
+    if(result.Contains("command not found"))
+    {
+        Console.WriteLine("Installing OpenJDK Version 21...");
+    }
 }
 else
 {
+    //fix this!!
     string strCmdText;
-    strCmdText= "java Marrow.jar";
-    System.Diagnostics.Process.Start("CMD.exe",strCmdText);
-}
-
-string RunCommandWithBash(string command)
-{
-    var psi = new ProcessStartInfo();
-    psi.FileName = "/bin/bash";
-    psi.Arguments = command;
-    psi.RedirectStandardOutput = true;
-    psi.UseShellExecute = false;
-    psi.CreateNoWindow = true;
-
-    using var process = Process.Start(psi);
-
-    process.WaitForExit();
-
-    var output = process.StandardOutput.ReadToEnd();
-
-    return output;
+    strCmdText= "java -jar Marrow.jar";
+    Process proc = Process.Start("CMD.exe",strCmdText);
 }
