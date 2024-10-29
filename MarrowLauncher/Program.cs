@@ -65,7 +65,9 @@ else
         CreateNoWindow = true,
         UseShellExecute = false
     };
+
     Process proc;
+    
     if ((proc = Process.Start(processInfo)) == null)
     {
         throw new InvalidOperationException("??");
