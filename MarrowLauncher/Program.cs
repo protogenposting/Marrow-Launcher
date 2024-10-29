@@ -40,6 +40,8 @@ if(lastDownloadedRelease.Equals("") || !latest.TagName.Equals(lastDownloadedRele
     webClient.UseDefaultCredentials = true;
 
     webClient.DownloadFile("https://github.com/protogenposting/Marrow/releases/latest/download/Marrow.jar", "Marrow.jar");
+
+    Console.WriteLine("Downloading Done... Launching");
 }
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
