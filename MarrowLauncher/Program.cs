@@ -55,8 +55,11 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    //fix this!!
-    string strCmdText;
-    strCmdText= "java -jar Marrow.jar";
-    Process proc = Process.Start("CMD.exe",strCmdText);
+    Process process = new Process();
+    ProcessStartInfo startInfo = new ProcessStartInfo();
+    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+    startInfo.FileName = "cmd.exe";
+    startInfo.Arguments = "java -jar Marrow.jar";
+    process.StartInfo = startInfo;
+    process.Start();
 }
