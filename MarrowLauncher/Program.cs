@@ -55,7 +55,7 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    string result = ShellHelper.Bash("java -jar Marrow.jar");
+    string result = ShellHelper.CMD("java -jar Marrow.jar");
 
     if(result.Contains("command not found"))
     {
