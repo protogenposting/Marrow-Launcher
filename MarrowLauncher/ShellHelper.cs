@@ -28,4 +28,29 @@ public static class ShellHelper
 
         return result;
     }
+    public static string CMD(this string cmd)
+    {
+        var escapedArgs = cmd.Replace("\"", "\\\"");
+
+        var process = new Process()
+        {
+            StartInfo = new ProcessStartInfo
+            {
+                FileName = "cmd.exe",
+                Arguments = cmd,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+            }
+        };
+
+        process.Start();
+        
+        string result = process.StandardError.ReadToEnd();
+
+        process.WaitForExit(-1);
+
+        return result;
+    }
 }

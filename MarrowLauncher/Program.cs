@@ -55,11 +55,12 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    Process process = new Process();
-    ProcessStartInfo startInfo = new ProcessStartInfo();
-    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-    startInfo.FileName = "cmd.exe";
-    startInfo.Arguments = "java -jar Marrow.jar";
-    process.StartInfo = startInfo;
-    process.Start();
+    string result = ShellHelper.Bash("java -jar Marrow.jar");
+
+    if(result.Contains("command not found"))
+    {
+        Console.WriteLine("No Java Version Found!");
+
+        Console.WriteLine("Install openjdk 21!");
+    }
 }
