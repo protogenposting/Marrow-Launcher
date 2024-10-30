@@ -107,10 +107,6 @@ else
             Console.WriteLine("Download java here! https://learn.microsoft.com/en-us/java/openjdk/download");
 
             Console.WriteLine("IF THAT DOESN'T WORK GO HERE TO FIGURE OUT JAVA_HOME https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html");
-
-            Console.WriteLine("Press Enter To Exit...");
-
-            Console.ReadLine();
         }
     }
 }
