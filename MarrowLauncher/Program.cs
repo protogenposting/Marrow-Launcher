@@ -60,20 +60,56 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("JAVA_HOME") + "bin/java.exe", "-jar Marrow.jar")
-    {
-        CreateNoWindow = true,
-        UseShellExecute = false
-    };
+    string javaHome = Environment.GetEnvironmentVariable("JAVA_HOME");
 
-    Process proc;
-    
-    if ((proc = Process.Start(processInfo)) == null)
-    {
-        throw new InvalidOperationException("??");
+    try{
+        var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("JAVA_HOME") + "/bin/java.exe", "-jar Marrow.jar")
+        {
+            CreateNoWindow = true,
+            UseShellExecute = false
+        };
+
+        Process proc;
+        
+        if ((proc = Process.Start(processInfo)) == null)
+        {
+            throw new InvalidOperationException("??");
+        }
+
+        proc.WaitForExit();
+        int exitCode = proc.ExitCode;
+        proc.Close();
     }
+    catch(Exception e)
+    {
+        try{
+            var processInfo = new ProcessStartInfo("java.exe", "-jar Marrow.jar")
+            {
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
 
-    proc.WaitForExit();
-    int exitCode = proc.ExitCode;
-    proc.Close();
+            Process proc;
+            
+            if ((proc = Process.Start(processInfo)) == null)
+            {
+                throw new InvalidOperationException("??");
+            }
+
+            proc.WaitForExit();
+            int exitCode = proc.ExitCode;
+            proc.Close();
+        }
+        catch(Exception e2)
+        {
+            if(javaHome == null)
+            {
+                Console.WriteLine("NO JAVA HOME FOUND");
+
+                Console.WriteLine("Press Enter To Exit...");
+
+                Console.Read();
+            }
+        }
+    }
 }
