@@ -108,6 +108,8 @@ else
 
                 Console.WriteLine("Press Enter To Exit...");
 
+                Console.WriteLine("https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html GO HERE TO FIGURE IT OUT");
+
                 Console.Read();
             }
         }
