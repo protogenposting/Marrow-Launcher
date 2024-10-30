@@ -62,11 +62,14 @@ else
 {
     string javaHome = Environment.GetEnvironmentVariable("JAVA_HOME");
 
+    Console.WriteLine("Java Home At: "+javaHome);
+
     try{
-        var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("JAVA_HOME") + "/bin/java.exe", "-jar Marrow.jar")
+        var processInfo = new ProcessStartInfo(javaHome + "/bin/java.exe", "-jar Marrow.jar")
         {
             CreateNoWindow = true,
-            UseShellExecute = false
+            UseShellExecute = false,
+            RedirectStandardError = true
         };
 
         Process proc;
@@ -76,8 +79,19 @@ else
             throw new InvalidOperationException("??");
         }
 
+        Console.WriteLine("Running From Home!");
+
         proc.WaitForExit();
+
+        string error = proc.StandardError.ReadToEnd();
+
+        if(error.Contains("has been compiled by a more recent version of the Java Runtime"))
+        {
+            Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://learn.microsoft.com/en-us/java/openjdk/download");
+        }
+
         int exitCode = proc.ExitCode;
+        
         proc.Close();
     }
     catch(Exception e)
@@ -86,7 +100,8 @@ else
             var processInfo = new ProcessStartInfo("java.exe", "-jar Marrow.jar")
             {
                 CreateNoWindow = true,
-                UseShellExecute = false
+                UseShellExecute = false,
+                RedirectStandardError = true
             };
 
             Process proc;
@@ -96,8 +111,19 @@ else
                 throw new InvalidOperationException("??");
             }
 
+            Console.WriteLine("Running From EXE!");
+
             proc.WaitForExit();
+
+            string error = proc.StandardError.ReadToEnd();
+
+            if(error.Contains("has been compiled by a more recent version of the Java Runtime"))
+            {
+                Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://learn.microsoft.com/en-us/java/openjdk/download");
+            }
+
             int exitCode = proc.ExitCode;
+
             proc.Close();
         }
         catch(Exception e2)

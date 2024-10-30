@@ -693,46 +693,46 @@
         },
         "native": {
           "Microsoft.DiaSymReader.Native.amd64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "14.40.33810.0"
           },
           "System.IO.Compression.Native.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "clretwrc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "clrgc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "clrjit.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "coreclr.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "createdump.exe": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "hostfxr.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "hostpolicy.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "mscordaccore.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "mscordaccore_amd64_amd64_8.0.1024.46610.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "mscordbi.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "mscorrc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "8.0.1024.46610"
           },
           "msquic.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.3.5.0"
           }
         }
       },
