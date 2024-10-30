@@ -60,7 +60,7 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 }
 else
 {
-    var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("JAVA_HOME") + "/bin/java.exe", "-jar Marrow.jar")
+    var processInfo = new ProcessStartInfo(Environment.GetEnvironmentVariable("JAVA_HOME") + "bin/java.exe", "-jar Marrow.jar")
     {
         CreateNoWindow = true,
         UseShellExecute = false
