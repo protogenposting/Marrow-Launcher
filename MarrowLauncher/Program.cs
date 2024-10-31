@@ -87,7 +87,7 @@ else
 
         if(error.Contains("has been compiled by a more recent version of the Java Runtime"))
         {
-            Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://learn.microsoft.com/en-us/java/openjdk/download");
+            Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://www.openlogic.com/openjdk-downloads");
         }
 
         int exitCode = proc.ExitCode;
@@ -119,7 +119,7 @@ else
 
             if(error.Contains("has been compiled by a more recent version of the Java Runtime"))
             {
-                Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://learn.microsoft.com/en-us/java/openjdk/download");
+                Console.WriteLine("Java Is Outdated! Download java version 21 or higher here! https://www.openlogic.com/openjdk-downloads");
             }
 
             int exitCode = proc.ExitCode;
@@ -130,7 +130,7 @@ else
         {
             Console.WriteLine("NO JAVA.EXE OR JAVA HOME FOUND");
 
-            Console.WriteLine("Download java version 21 or higher here! https://learn.microsoft.com/en-us/java/openjdk/download");
+            Console.WriteLine("Download java version 21 or higher here! https://www.openlogic.com/openjdk-downloads");
 
             Console.WriteLine("IF THAT DOESN'T WORK GO HERE TO FIGURE OUT JAVA_HOME https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html");
         }
